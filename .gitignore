@@ -1,0 +1,26 @@
+__pycache__/
+*.pyc
+
+.venv/
+.env
+.env.*
+
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Virtual env / uv
+.venv/
+
+# Local secrets
+.env
+
+# Local outputs
+data/
+reports/
+
+
