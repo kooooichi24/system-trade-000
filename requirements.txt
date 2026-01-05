@@ -1,0 +1,21 @@
+# システムトレード学習用パッケージ
+
+# データ取得・処理
+yfinance>=0.2.36         # Yahoo Finance APIからデータ取得
+pandas>=2.1.4            # データ分析・操作
+numpy>=1.26.2            # 数値計算
+
+# テクニカル指標
+ta>=0.11.0               # テクニカル分析ライブラリ
+pandas-ta>=0.3.14b       # Pandasベースのテクニカル分析
+
+# バックテスト
+backtrader>=1.9.78.123   # バックテストフレームワーク
+
+# 可視化
+matplotlib>=3.8.2        # グラフ描画
+plotly>=5.18.0           # インタラクティブなチャート
+
+# Jupyter Notebook
+jupyter>=1.0.0           # 対話的な学習環境
+ipykernel>=6.28.0        # Jupyter用カーネル
