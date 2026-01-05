@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "system-trade-000"
+version = "0.1.0"
+description = "OSS活用で学ぶシステムトレード最小PoC（Alpaca + vectorbt）"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "alpaca-py>=0.28.0",
+  "vectorbt>=0.27.0",
+  "pandas>=2.2.0",
+  "numpy>=1.26.0",
+  "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+st000-poc = "system_trade_000.cli:main"
+
+[tool.setuptools]
+# src/ を system_trade_000 パッケージとして扱う（src/system_trade_000/ を廃止）
+packages = ["system_trade_000"]
+package-dir = { "system_trade_000" = "src" }
+
+
